@@ -10,7 +10,10 @@
     <div id="app">
       <!-- TODO: Buatlah sebuah header dengan id todo-title -->
       <!-- TODO: Buatlah sebuah subtitle dengan id todo-subtitle -->
-      <h1 id="toto-title"> Headernya</h1>
+      <div id="todo-title">
+        <h1> Headernya</h1>
+      </div>
+      
       <h2 id="todo-subtitle">Subtitlenya</h2>
       <!-- Section: input -->
       <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
@@ -55,7 +58,7 @@
       // TODO: register event onkeypress / addEventListener untuk input
       // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
       input = document.getElementById("todo-input");
-      input.addEventListener("keypress", (aksi)=> {
+      input.addEventListener("keypress", function(aksi) {
         if(aksi.key === "Enter"){
           fnClickHandler();
         }
